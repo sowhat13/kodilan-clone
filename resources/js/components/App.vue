@@ -1,22 +1,15 @@
 <template>
-   <div>
-<navbar> 
-</navbar>
-
-<card></card>
-
-   </div>
+  <div>
+    <navbar></navbar>
+    <card></card>
+  </div>
 </template>
 
 <script>
-import navbar from "./Navbar"
-import card from "./card"
+import Navbar from "./Navbar";
+import Card from "./Card";
 
-    export default {
-
-       components:{navbar,card}
-
-     
-    }
-
+export default {
+  components: { Navbar, Card }
+};
 </script>

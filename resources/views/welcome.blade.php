@@ -7,6 +7,12 @@
     <title>Kod ilan</title>
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,4 +21,5 @@
 
     <script src="{{asset('js/app.js')}}"></script>
 </body>
+
 </html>
