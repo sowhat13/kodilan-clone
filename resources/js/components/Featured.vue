@@ -1,5 +1,7 @@
 <template>
-  <div class="border border-green-600">featured</div>
+    <div class="col-span-1 border border-red-300">
+
+    </div>
 </template>
 
 <script>

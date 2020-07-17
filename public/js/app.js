@@ -213,6 +213,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1687,9 +1689,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "border border-green-600" }, [
-    _vm._v("featured")
-  ])
+  return _c("div", { staticClass: "col-span-1 border border-red-300" })
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1888,38 +1888,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mt-10 grid grid-cols-3 gap-4" }, [
-    _c("div", { staticClass: "col-span-2" }, [
-      _c("div", { staticClass: "ml-20" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "my-5 border border-gray-400 rounded-sm" },
-          _vm._l(_vm.jobs, function(job) {
-            return _c("notice", {
-              key: job.title,
-              attrs: {
-                title: job.title,
-                image: job.image,
-                workingType: job.workingType,
-                company: job.company,
-                location: job.location,
-                publishedAt: job.publishedAt
-              }
-            })
-          }),
-          1
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-span-1 border border-red-300" }, [
-      _vm._v("1")
-    ])
-  ])
+  return _c(
+    "div",
+    { staticClass: "mt-10 grid grid-cols-3 gap-4" },
+    [
+      _c("div", { staticClass: "col-span-2" }, [
+        _c("div", { staticClass: "ml-20" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "my-5 border border-gray-400 rounded-sm" },
+            _vm._l(_vm.jobs, function(job) {
+              return _c("notice", {
+                key: job.title,
+                attrs: {
+                  title: job.title,
+                  image: job.image,
+                  workingType: job.workingType,
+                  company: job.company,
+                  location: job.location,
+                  publishedAt: job.publishedAt
+                }
+              })
+            }),
+            1
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("featured")
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {

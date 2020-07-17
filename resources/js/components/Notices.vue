@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="col-span-1 border border-red-300">1</div>
+    <featured></featured>
   </div>
 </template>
 
