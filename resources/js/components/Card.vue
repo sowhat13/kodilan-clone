@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 mt-32">
+  <div class="bg-gray-800 mt-24">
     <div class="py-16 px-20">
       <div>
         <h1 class="ml-4 mb-10 text-white text-4xl">İlan Ara</h1>
@@ -26,24 +26,7 @@
         </div>
         <div class="lg:w-2/5 mt-4">
           <div class="ml-3 mt-1 flex flex-wrap">
-            <span
-              class="py-1 px-3 text-gray-400 rounded bg-transparent border border-gray-200 m-1"
-            >Frontend</span>
-            <span
-              class="py-1 px-3 text-gray-400 rounded bg-transparent border border-gray-200 m-1"
-            >Backend</span>
-            <span
-              class="py-1 px-3 text-gray-400 rounded bg-transparent border border-gray-200 m-1"
-            >Mobile</span>
-            <span
-              class="py-1 px-3 text-gray-400 rounded bg-transparent border border-gray-200 m-1"
-            >Devops</span>
-            <span
-              class="py-1 px-3 text-gray-400 rounded bg-transparent border border-gray-200 m-1"
-            >İstanbul</span>
-            <span
-              class="py-1 px-3 text-gray-400 rounded bg-transparent border border-gray-200 m-1"
-            >Ankara</span>
+            <badge v-for="tag in tags" :key="tag" :name="tag"></badge>
           </div>
         </div>
       </div>
@@ -52,8 +35,16 @@
 </template>
 
 <script>
-export default {};
-</script>
+import Badge from "./Badge";
 
-<style scoped>
-</style>
+export default {
+  components: {
+    Badge
+  },
+  data() {
+    return {
+      tags: ["Ankara", "Frontend", "Backend", "Mobile", "İzmir", "Devops"]
+    };
+  }
+};
+</script>

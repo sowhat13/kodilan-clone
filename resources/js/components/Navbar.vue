@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <div id="navbar" class="block">
-      <a href="#default" id="logo" class="px-3 py-2 ml-12">
-        <span class="flex items-center">
-          <span class="text-green-600 text-5xl">{</span>
-          <span class="font-light ml-1 text-4xl">kod</span>
-          <span class="text-3xl text-green-600 mr-1">,</span>
-          <span class="mr-1 text-4xl">ilan</span>
-          <span class="text-green-600 text-5xl">}</span>
-        </span>
+  <div id="navbar" class="block bg-white">
+    <a href="#default" id="logo" class="px-3 py-2 ml-12">
+      <span class="flex items-center">
+        <span class="text-green-600 text-5xl">{</span>
+        <span class="font-light ml-1 text-4xl">kod</span>
+        <span class="text-3xl text-green-600 mr-1">,</span>
+        <span class="mr-1 text-4xl">ilan</span>
+        <span class="text-green-600 text-5xl">}</span>
+      </span>
+    </a>
+    <div id="navbar-right" class="mr-12">
+      <a class="bg-gray-700 border border-gray-500 text-white mx-3 px-5 py-2">
+        <i class="fas fa-bullhorn"></i> Abone Ol
       </a>
-      <div id="navbar-right" class="mr-12">
-        <a class="bg-gray-700 text-white mx-3 px-5 py-2"><i class="fas fa-bullhorn"></i>  Abone Ol</a>
-        <a class="bg-green-600 text-white mx-3 px-5 py-2">Ücretsiz İlan Ekle</a>
-      </div>
+      <a class="bg-green-600 text-white mx-3 px-5 py-2">Ücretsiz İlan Ekle</a>
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ window.onscroll = function() {
   scrollFunction();
 };
 
-function scrollFunction() {
+const scrollFunction = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("navbar").style.padding = "20px 10px";
     document.getElementById("logo").style.fontSize = "25px";
@@ -33,13 +33,12 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "30px 10px";
     document.getElementById("logo").style.fontSize = "35px";
   }
-}
+};
 </script>
 
 <style scoped>
 #navbar {
   overflow: hidden;
-  background-color: white;
   padding: 40px 10px;
   transition: 1s;
   position: fixed;
